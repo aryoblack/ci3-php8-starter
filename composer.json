@@ -1,0 +1,27 @@
+{
+    "name": "local/ci3-php8-starter",
+    "description": "Reusable CodeIgniter 3.1.13 starter with local PHP 8 compatibility patches",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0 <8.5",
+        "ext-json": "*",
+        "ext-session": "*",
+        "ext-filter": "*",
+        "ext-hash": "*",
+        "ext-mbstring": "*",
+        "ext-mysqli": "*"
+    },
+    "suggest": {
+        "ext-fileinfo": "Document MIME validation",
+        "ext-zip": "ZIP import/export",
+        "ext-gd": "Image processing",
+        "ext-openssl": "Encryption and TLS integrations"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "check": "@php index.php compat_check"
+    }
+}

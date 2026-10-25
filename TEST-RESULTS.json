@@ -1,0 +1,35 @@
+{
+  "tested": [
+    {
+      "php": "8.1.10",
+      "cli_helpers_encryption": "PASS",
+      "http_welcome": "PASS",
+      "http_session_roundtrip": "PASS"
+    },
+    {
+      "php": "8.2.20",
+      "cli_helpers_encryption": "PASS",
+      "http_welcome": "PASS",
+      "http_session_roundtrip": "PASS"
+    },
+    {
+      "php": "8.3.29",
+      "cli_helpers_encryption": "PASS",
+      "http_welcome": "PASS",
+      "http_session_roundtrip": "PASS"
+    },
+    {
+      "php": "8.4.16",
+      "cli_helpers_encryption": "PASS",
+      "http_welcome": "PASS",
+      "http_session_roundtrip": "PASS"
+    }
+  ],
+  "not_tested": [
+    "PHP 8.0 runtime unavailable",
+    "PHP 8.5+",
+    "Database connection and consuming application dependencies",
+    "All optional CI3 drivers/integrations"
+  ],
+  "php84_syntax_files": 204
+}

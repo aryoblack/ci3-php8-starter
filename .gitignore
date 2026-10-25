@@ -1,0 +1,66 @@
+# Local environment and secrets (keep safe example files)
+.env
+.env.*
+!.env.example
+!.env.*.example
+/.env.local.php
+/auth.json
+/application/config/database.local.php
+/application/config/config.local.php
+
+# Composer dependencies; commit composer.lock for reproducible installs
+/vendor/
+
+# Runtime files; retain directory protection and placeholders
+/application/cache/*
+!/application/cache/index.html
+!/application/cache/.htaccess
+!/application/cache/sessions/
+/application/cache/sessions/*
+!/application/cache/sessions/index.html
+!/application/cache/sessions/.htaccess
+/application/logs/*
+!/application/logs/index.html
+!/application/logs/.htaccess
+
+# Local uploads and generated documents
+/uploads/*
+!/uploads/index.html
+!/uploads/.htaccess
+
+# Local database and backup artifacts
+*.sql
+*.sql.gz
+*.sqlite
+*.sqlite3
+/backup/
+/backups/
+/backup-*.zip
+/ci3-php8-starter*.zip
+
+# Test and documentation build output
+/tests/tests/
+/tests/results/
+/coverage/
+/.phpunit.cache/
+.phpunit.result.cache
+/user_guide_src/build/
+/user_guide_src/cilexer/build/
+/user_guide_src/cilexer/dist/
+/user_guide_src/cilexer/pycilexer.egg-info/
+
+# Editor and operating-system files
+/.idea/
+/.vscode/
+/nbproject/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
